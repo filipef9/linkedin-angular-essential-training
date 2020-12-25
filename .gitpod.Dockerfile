@@ -6,3 +6,5 @@ RUN bash -c ". .nvm/nvm.sh \
     && nvm alias default 10"
 
 RUN echo "nvm use default &>/dev/null" >> ~/.bashrc.d/51-nvm-fix
+
+RUN bash -c "npm install -g @angular/cli@8.0.3"
