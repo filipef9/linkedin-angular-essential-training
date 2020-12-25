@@ -7,4 +7,7 @@ RUN bash -c ". .nvm/nvm.sh \
 
 RUN echo "nvm use default &>/dev/null" >> ~/.bashrc.d/51-nvm-fix
 
-RUN bash -c "npm install -g @angular/cli@8.0.3"
+RUN bash -c "npm install -g @angular/cli@8.0.3 &&\
+    ng analytics off"
+
+
